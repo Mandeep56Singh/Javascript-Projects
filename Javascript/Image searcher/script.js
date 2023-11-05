@@ -7,6 +7,8 @@ const showMoreBtn = document.getElementById("show-more-btn");
 let keyword = ""; // photo to be searched
 let page = 1;
 const accessKey = "ZqTkgTQD0YKfLOlOle10z3uNDRCiHtQVYRJJEf8CKXo";
+
+
 async function searchImages(){
  keyword = searchBox.value;
  const requestURL = `https://api.unsplash.com/search/photos?page=${keyword}&query=${keyword}&client_id=${accessKey}&per_page=12`;
@@ -38,9 +40,13 @@ searchResult.innerHTML = "";
   })
 
   // To show more images
-  if(keyword !== ""){
+  if(keyword !== "" ){
   showMoreBtn.style.display = "block";
-  } else {
+  } 
+  else if(keyword === "") {
+    const warning = "Please Enter a keyword!";
+   searchBox.placeholder = warning;
+   searchBox.placeholder.style.color = "Red";
     
   }
 }
