@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #42455a;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+
+}
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+nav li {
+    margin: 0px 20px ;
+   
+}
+nav a {
+    color: #b2b1b1;
+    text-decoration: none;
+
+}
+nav a:hover {
+    color: #19dafa ;
+}
+#active a {
+    color: #19dafa !important;
+}
+.logo {
+    margin-top: -7px;
+    margin-right: 48px;
+}
+header button , #learn-btn {
+    color: #fff;
+    margin-top: -7px;
+ 
+ 
+    /* ------- Gradient on Round border */
+    border: 2px solid transparent;  
+    /* This property is needed to remove default border and without removing border, if we select border none this will not allow us to use border  , so below lines will be worthless. */
+    border-radius: 20px ;
+    
+    background: linear-gradient(#42455a,#42455a),radial-gradient(circle at top left , #fd00da,#19d7f8);
+    background-origin: border-box ;  /* We need to set origin to border-box to get seamless round gradient border   */
+
+    /* Linear gradient is applied to padding box while radial gradient is applied to border box  */
+    /* Note : we used padding box , so we can add linear gradient to our padding as well as content */
+    background-clip: padding-box,border-box;
+}
+header button {
+    padding: 8px 22px ;
+}
+
+/* Main section styling here */
+
+main {
+    display: flex;
+}
+.text {
+    height: 50%;
+    width: 40%;
+    margin: 120px;
+}
+.text h1 {
+    color: #fff;
+    font-size: 28px ;
+    font-weight: 600px;
+    margin-bottom: 24px;
+}
+.text p {
+    color: #b2b1b1b1;
+    margin-bottom: 24px;
+}
+.image img {
+   height: 300px;
+   width: 300px;
+   margin-left: 35%;
+   margin-top: 25%;
+}
+
+#learn-btn {
+    border-radius: 50px;
+    padding: 12px;
+}
+
