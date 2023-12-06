@@ -64,3 +64,18 @@
     position: relative;
     
 }
+.header__menu-mobile-items {
+    margin-top: 20px;
+    width: 100vw;
+    height: 40vh;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.header__menu-mobile-items .search__field {
+    display: flex;
+    gap: 20px;
+
+}
+
