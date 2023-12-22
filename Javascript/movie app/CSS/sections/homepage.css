@@ -1,0 +1,65 @@
+.container {
+    position: relative;
+    background-color: var(--surface);
+    color: var(--on-surface);
+    padding: 24px 20px 48px;
+    height: calc(100vh - 96px);
+    overflow-y: overlay;
+    z-index: 1;
+}
+
+/* To make shadow at bottom of screen , which will be visible while scrolling also */
+.container::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(var(--bottom-overlay));
+  pointer-events: none;
+}
+
+.banner {
+    position: relative;
+    height: 700px;
+    border-radius: var(--radius-24);
+    overflow: hidden;
+
+}
+
+.banner-slider .slider-item {
+    position: absolute;
+    top: 0;
+    left: 120%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--banner-background);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-long);
+}
+.banner-slider .slider-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(var(--banner-overlay));
+
+}
+.banner-slider .active {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.banner-content {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 206px;
+    z-index: 1;
+    color: var(--text-color);
+}
+.banner :is(.heading, .banner-text) {
+    display: -webkit-box;
+    
+}
