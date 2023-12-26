@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+
+   
+
+}
+body {
+    height: 100vh;
+    width: 100vw;
+}
+.div1 , .div2 {
+    height: 100%;
+}
+.div1 {
+    background: pink;
+}
+.div2 {
+    background: salmon;
+    height: 200%;
+    width: 100%;
+    overflow: hidden;
+}
+.square {
+    height: 150px;
+    width: 150px;
+    background: blue;
+}
+.square-1 {
+    height: 150px;
+    width: 150px;
+    background: darkmagenta;
+    margin-top: 150px;
+    margin-left: auto;
+
+}
+.square-2 {
+    height: 150px;
+    width: 150px;
+    background: rgb(0, 125, 139);
+    margin-top: 150px;
+}
+.red {
+    background: red;
+}

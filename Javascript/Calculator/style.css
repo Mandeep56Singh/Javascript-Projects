@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg, #0a0a0a,#3a4452) ;
+}
+.Calculator {
+  border: 1px solid #717377;
+  padding: 20px;
+  background-color: transparent;
+  box-shadow: 0px 3px 15px rgba(133,115,119,0.5);
+  border-radius: 16px;
+
+}
+
+
+.btn>:nth-child(1)>*,
+.btn>:nth-child(2)>:last-child,
+.btn>:nth-child(3)>:last-child, 
+.btn>:nth-child(4)>:last-child,
+.btn>:nth-child(5)>:nth-child(n+3){
+ color: green;
+}
+.input-field {
+  
+  width: 320px;
+  padding: 24px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  font-size: 40px;
+  text-align: right;
+
+  cursor : pointer;
+  color: #fff;
+
+}
+input::placeholder {
+  color: #fff;
+
+}
+button {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  
+  background-color: transparent;
+  color:#fff;
+  
+  font-size: 20px;
+
+  /* neumorphism design  */
+  box-shadow: 
+  -2px -2px 3px  #ffffff33,
+   2px 2px 3px #000000;
+
+}
+
+
+
+

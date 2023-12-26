@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monsterrat';
+
+   
+}
+@font-face {
+    font-family: 'Monsterrat';
+    src: url(assests/fonts/Montserrat-Black.ttf);
+ 
+}
+@font-face {
+    font-family: 'Monsterrat-thin';
+    src: url(assests/fonts/Montserrat-Light.ttf);
+ 
+}
+html,body {
+    height: 100%;
+    width: 100%;
+   
+   
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+/* --------------header styling -----------------*/
+header {
+
+    display: flex;
+    padding: 10px 150px;
+    position: fixed;
+    width: 100%;
+    height: 130px;
+    z-index: 9;
+
+}
+nav ul {
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    
+   
+}
+nav ul li {
+    margin: 20px 20px;
+}
+ a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+header img {
+    margin-right: 20px;
+    height: 80px;
+    object-fit: contain;
+}
+
+
+/* hero section styling  */
+ .hero__video video{
+  width: 100vw;
+  height: 100vh;
+  object-fit:cover;
+  position: fixed;
+  z-index: -1;
+  
+}
+.hero__text  {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+}
+.hero__text-heading {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.hero__text-heading h1{
+    
+    color: #fff;
+    font-size: 75px;  
+    position: relative;
+  
+}
+.hero__text-heading h1::before{
+    
+    content: 'Eat. Drink. Play.';
+    color: black;
+    font-size: 75px;  
+    top: -2px;
+    left: -2px;
+    position: absolute;
+    z-index: -1;
+    -webkit-text-stroke: 1px greenyellow;
+}
+.hero__text-subheading {
+    text-align: center;
+    width: 40vw;
+}
+.hero__text-subheading span {
+    color: #fff;
+    font-size: 24px ;
+    position: relative;
+
+}
+
+.hero__text-subheading p{
+    margin-top: 15px;
+    color: #fff;
+    font-family: 'Monsterrat-thin' ;
+}
+
+/* ----------- scroller section styling----------- */
+.scroller{
+    height: 60vh;
+    width: 100vw; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 8;
+   display: flex;
+   align-items: center;
+}
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+.scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+   
+}
+.list ul {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.list ul li {
+    display: inline-block;
+    white-space:nowrap;
+    margin: 20px 120px 0 0;
+}
+.list  a {
+   display: inline-block;
+   font-size: 120px;
+   font-weight: 800;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: transparent;
+   -webkit-text-stroke: 2px  yellowgreen;
+   transition: all 0.5s ease-in;
+}
+.list a:hover {
+    color: yellowgreen;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+/* ----------------styling cursor section ----------------- */
+.cursor {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(172, 255, 47, 0.733);
+    position: fixed;
+    z-index: 10;
+    border-radius: 100%;
+   
+}
+.cursor-blur{
+   
+    height: 300px;
+    width: 300px;
+    background-color: rgba(172, 255, 47, 0.567);
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 10;
+    transition: all linear 0.4s;
+    position: fixed;
+    pointer-events: none;
+    
+}
+
+/* aboutUs section styling */
+.aboutUs {
+     background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    z-index: 9;
+    position: relative;
+}
+.aboutUs__text {
+    margin: 0 80px;
+
+}
+.aboutUs__text h1 {
+    color: #fff;
+    font-size:48px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.aboutUs p {
+    color: white;
+    font-family: 'Monsterrat-thin';
+    font-size: 24px;
+  
+}
+.aboutUs__img img {
+    height: 220px;
+    width: 220px;
+    border-radius: 12px;
+    object-fit: cover;
+    overflow: hidden;
+ 
+  
+}
+/* styling services */
+
+.cards {
+    width: 100vw;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card {
+    height: 300px;
+    width: 300px;
+
+    border-radius: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+   
+}
+.card:hover {
+    
+}
+.card h1 {
+    margin-bottom: 24px;
+    
+}
+
+.card h3, h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Monsterrat';
+    margin-left: 20px;
+    
+}
+.card-1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+.card-2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+.card-3{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+
+}

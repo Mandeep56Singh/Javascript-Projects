@@ -1,0 +1,36 @@
+@font-face {
+    font-family: heading;
+    src: url(fonts/futura\ medium\ bt.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+
+}
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(80, 77, 77, 0.238);
+}
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(135, 78, 52);
+}
+#page1 h1{
+    font-size: 40vw;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-family: heading;
+    /* font-stretch: 250%; */
+    font-weight: 999;
+}
