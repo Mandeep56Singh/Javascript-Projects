@@ -1,0 +1,13 @@
+header {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.char {
+    transform: translate();
+}

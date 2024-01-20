@@ -1,0 +1,59 @@
+ header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     background-color: var(--light);
+    padding: 20px 80px;
+
+    box-shadow: 0 5px 15px  rgba(0,0,0,0.06);
+
+    /* To make the box-shadow visible */
+    /* position: sticky; */
+    z-index: 99;
+    top: 0;
+    left: 0;
+    
+ }
+ 
+ nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ nav ul li {
+    list-style: none;
+    padding-inline: 20px;
+    position: relative;
+
+ }
+
+ nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 32px;
+
+ }
+ nav ul li a:hover,
+ nav ul li a.active {
+    color: var(--secondary);
+    
+ }
+ nav ul li a.active::after,
+ nav ul li a:hover::after {
+   content: '';
+   position: absolute;
+  
+   width: 30%;
+   height: 2px;
+   background :var(--secondary);
+
+   bottom: -4px;
+   left: 20px;
+ }
+
+ header .logo img {
+   height: 42px;
+ }

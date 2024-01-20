@@ -1,0 +1,65 @@
+[
+
+    
+    {
+        "id": 1,
+        "title": "Women's Fashion Bag",
+        "rating":"4.2",
+        "price":{
+         "original": "100",
+         "discount": "60"
+        },
+        "category":"accessories",
+        "stock": 12,
+        "image":"/img/products/bag1.png",
+        "height": 400,
+        "width":400,
+        "description": 
+        "Elegance meets versatility in this stunning women's bag, adorned with a chic chain, seamlessly blending style and functionality for the modern woman on the go.",
+        "brand": "Fendi",
+        "color": " #E4F0FC",
+        "salesDays":3
+    },
+    {
+        "id": 2,
+        "title": "Quartz Watch For Men",
+        "rating": "4.0",
+        "price":{
+         "original": "70",
+         "discount": "50"
+        },
+       
+        "category":"accessories",
+        "stock": 24,
+        "image":"/img/products/quartz_watch.png",
+        "height": 400,
+        "width":400,
+        "description": 
+        "LOUIS DEVIN Quartz Men's Watch  | Sleek Design | Versatile Elegence | Water Resistant ",
+        "brand": "LOUIS DEVIN",
+        "color": "#FFFF8F",
+        "salesDays":2
+    },
+    {
+        "id": 3,
+        "title": "Nike",
+        "rating":"4.3",
+        "price":{
+         "original": "100",
+         "discount": "70"
+        },
+       
+        "category":"accessories",
+        "stock": 9,
+        "image":"/img/products/shoes.png",
+        "height": 400,
+        "width":400,
+        "description": 
+        "LOUIS DEVIN Quartz Analogue Stainless Stell Watch fro Men ",
+        "brand": "LOUIS DEVIN",
+        "color": "#FFFF8F",
+        "salesDays":1
+    }
+
+    
+]
