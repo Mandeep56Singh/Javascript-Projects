@@ -7,7 +7,13 @@ h1 {
     font-size: 7rem;
     text-transform: uppercase;
     font-weight: 700;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 .char {
-    transform: translate();
+    transform: translateY(115px);
+    transition: transform(.5s);
+}
+.word {
+   
+    transition: transform(.5s);
 }

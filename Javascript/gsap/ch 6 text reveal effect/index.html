@@ -20,15 +20,16 @@
         const Text = new SplitType("#my-text");
         let chars = Text.chars;
         console.log(chars);
-
-        gsap.to(chars, {
-            yPercent:0,
+     
+        gsap.registerPlugin();
+        gsap.from('.word', {
+            x:-160,
             stagger:0.05,
-            Delay:0.2,
-            ease:"back.out",
-            duration:1,
+            delay:0.2,
+            // ease:"back.out",
+            duration:0.5,
             scrollTrigger: {
-                trigger:"#myText",
+                trigger:"#my-text",
                 start:"top 80%",
                 markers:true,
 
