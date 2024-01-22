@@ -1,14 +1,16 @@
 
-@import url("/CSS/header.css");
-@import url('/CSS/hero.css');
+@import url('/CSS/homepage.css');
 @import url('/CSS/limitedDeal.css');
 @import url('/CSS/feature.css');
+@import url('/CSS/categories.css');
 
 
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=League+Spartan:wght@300&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=League+Spartan:wght@300&family=Lemon&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap');
+
+
 
 :root {
 
@@ -19,7 +21,23 @@
   --primary:#ADD8E6;
   --secondary:#00A7DC;
   --para:#465b52;
-  --light: #E6F4F1;
+  --light: #f6F4F1;
+
+  /* color palette */
+  /* 
+  Heliotrope
+#C466FB
+
+Brink Pink
+#FB7277
+
+Lima
+#5FC219
+
+Inch Worm
+#98E124
+  
+  */
 
 
 }
@@ -48,4 +66,22 @@ p {
   font-size: 24px;
   
 }
+ /* styling the LoadOverlay */
+ .LoadOverlay {
+  /* don't use position : absolute here it will put the LoadOverlay to top of page , it will create problem if u are not at top of body */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #BFD6D9;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ }
+ .LoadOverlay img {
+   height: 400px;
+ }
 

@@ -1,0 +1,182 @@
+
+
+ .homepage {
+    background: #f6f4f1;
+
+    background-image: url('/img/backgrounds/wavyBg.jpg');
+    background-size: cover;
+ }
+ 
+ header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: transparent; */
+    padding: 0px 80px 0 20px;
+
+    box-shadow: 0 5px 15px  rgba(0,0,0,0.06);
+
+    /* To make the box-shadow visible */
+    /* position: sticky; */
+    z-index: 99;
+    top: 0;
+    left: 0;
+    height: 12vh;
+    
+ }
+ 
+ nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ nav ul li {
+    list-style: none;
+    padding-inline: 20px;
+    position: relative;
+
+ }
+
+ nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 32px;
+
+ }
+ nav ul li a:hover,
+ nav ul li a.active {
+    color: var(--secondary);
+    
+ }
+ nav ul li a.active::after,
+ nav ul li a:hover::after {
+   content: '';
+   position: absolute;
+  
+   width: 30%;
+   height: 2px;
+   background :var(--secondary);
+
+   bottom: -4px;
+   left: 20px;
+ }
+
+ header .logo img {
+ 
+   height: 80px;
+   cursor: pointer;
+ 
+ }
+ 
+.hero {
+   
+   display: flex;
+   align-items: center;
+   gap: 40px;
+
+    height: 88vh;
+    width: 100%;
+
+
+   
+
+    /* background-image:  linear-gradient(45deg,rgba(254, 147, 98, 0.95),rgba(254, 147, 98, 0.414)) ,url('https://images.unsplash.com/photo-1576072446584-4955dfe17b86?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.vertical-line {
+    border-left: 4px solid var(--primary);
+    height: 320px;
+    position: relative;
+    left: 8%;
+    
+}
+.hero-text {
+
+   
+    display: flex;
+    text-wrap: nowrap;
+    
+  
+}
+.hero-headings {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+   
+}
+
+.hero-headings > * {
+    overflow: hidden;
+}
+.hero-headings>*:not(:last-child) {
+    margin-left: 80px;
+}
+
+.hero-headings h4 {
+    margin-block: 30px;
+    font-weight: 800;
+}
+.hero-headings > :last-child {
+    margin-left: 60px;
+}
+
+.shopNow-btn {
+    overflow-x: hidden;
+}
+.shopNow-btn button {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: var(--secondary);
+    padding: 14px 30px 14px 20px;
+    
+
+    border: none;
+    outline: none;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+
+
+}
+.hero-headings button i {
+    margin-left: 20px;
+}
+
+/* for gsap animation */
+
+#span-heading {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform(.5s);
+}
+
+.img-container {
+    overflow: hidden;
+    
+}
+.img-container img {
+    object-fit: contain;
+    width: 540px;
+    border-radius: 100%;
+
+}
+
+

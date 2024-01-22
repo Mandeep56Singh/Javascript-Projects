@@ -17,7 +17,7 @@
         "description": 
         "Elegance meets versatility in this stunning women's bag, adorned with a chic chain, seamlessly blending style and functionality for the modern woman on the go.",
         "brand": "Fendi",
-        "color": " #E4F0FC",
+        "color": "/img/backgrounds/limitedDealsBg1.svg",
         "salesDays":3
     },
     {
@@ -37,7 +37,7 @@
         "description": 
         "LOUIS DEVIN Quartz Men's Watch  | Sleek Design | Versatile Elegence | Water Resistant ",
         "brand": "LOUIS DEVIN",
-        "color": "#FFFF8F",
+        "color": "/img/backgrounds/limitedDealsBg2.svg",
         "salesDays":2
     },
     {
@@ -51,13 +51,13 @@
        
         "category":"accessories",
         "stock": 9,
-        "image":"/img/products/shoes.png",
+        "image":"/img/products/shoes1.png",
         "height": 400,
         "width":400,
         "description": 
         "LOUIS DEVIN Quartz Analogue Stainless Stell Watch fro Men ",
         "brand": "LOUIS DEVIN",
-        "color": "#FFFF8F",
+        "color": "'/img/backgrounds/limitedDealsBg3.svg'",
         "salesDays":1
     }
 

@@ -1,0 +1,65 @@
+.categories {
+    
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 140px;
+}
+
+.categories img {
+ 
+    object-fit: cover;
+}
+
+.categories h1 {
+    font-size: 80px;
+}
+.clothing {
+
+   display: flex;
+   align-items: center;
+   margin-left: auto;
+   margin-right: 12%;
+}
+.clothing h1 {
+    position: relative;
+    z-index: 9;
+    right: -15%;
+}
+.clothing img{
+  background: #E4F0FC;
+}
+
+.accessories {
+   
+    position: relative;
+    top: -60px;
+    margin-right: auto;
+    margin-left: 8%;
+}
+.accessories h1 {
+        margin-left: 60px;
+        position: relative;
+        z-index: 9;
+        left: -15%;
+    
+}
+.accessories .image {
+  
+}
+
+.shoes {
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: 4%;
+    position: relative;
+    top: -380px;
+}
+.shoes h1{
+
+    position: relative;
+    z-index: 9;
+    left: 18%;
+    margin-top: 60px;
+}

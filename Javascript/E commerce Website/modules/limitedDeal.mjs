@@ -7,7 +7,7 @@ export function loaderForLimitedDeals() {
   const deals_container = document.querySelector(".deals-container");
  
 
-  for(let i = 0 ; i < 2; i++)
+  for(let i = 0 ; i < obj.length; i++)
 {
   createLimitedDealProduct();
 
@@ -26,15 +26,8 @@ export function loaderForLimitedDeals() {
     `
 
  <div class="about">
-   <div class="description">
-    <h2>${obj[i].title}</h2>
-    <p> ${obj[i].description}</p>
-  </div>
-  <div class="rating">
-    <h4> ${obj[i].rating} </h4>
-    <p> Rating <p>
-    
-  </div>
+   
+
 
 </div>
 <div class="ProductImage">
@@ -91,8 +84,9 @@ export function loaderForLimitedDeals() {
   deals_container.appendChild(deals);
 
 //  change color According to product 
+
 const deal = document.querySelector(`#deal${i}`);
-deal.style.backgroundColor = `${obj[i].color}`;
+deal.style.backgroundImage = `url(${obj[i].color})`;
 const inputs = deal.querySelectorAll("input");
 
 
@@ -147,7 +141,7 @@ const deals = gsap.utils.toArray(".deal");
     scrollTrigger: {
       trigger: ".limited-timeDeals",
       pin:true,
-      scrub: 0.2,
+      scrub: 3,
       end: "+=3000"
     }
   })

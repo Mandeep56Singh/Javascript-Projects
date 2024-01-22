@@ -10,3 +10,12 @@ onload();
 
 
 
+gsap.to('.LoadOverlay',2, {
+    // delay:0.5,
+    top:"-150%",
+    ease:Expo.easeInOut,
+})
+
+
+
+
