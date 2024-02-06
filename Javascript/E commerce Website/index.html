@@ -1,189 +1,226 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-  <title> cara</title>
-</head>
-
-<body>
-
-
-  <div class="LoadOverlay">
-    <img src="img/about/gradient-abstract-logo (1)/9391703.png" alt="logo">
-  </div>
-
-  <!-- Header  -->
-  
- 
-
-  <div class="homepage">
-  <header class="header">
-  
-    <div class="logo">
-      <a href="index.html">
-        <img src="img/about/gradient-abstract-logo (1)/9391703.png" alt="logo">
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>cara</title>
+  </head>
+  <body data-barba="wrapper">
+    <div class="LoadOverlay">
+      <img  src="img/about/logo5.svg"
+      alt="logo" />
     </div>
 
-    <nav class="nav">
-      <ul class="nav-ul">
-        <li><a class="active" href="#">home</a></li>
-        <li><a href="#">shop</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">contact</a></li>
-        <li><a href="#"><i class='bx bx-shopping-bag'></i></a></li>
-      </ul>
-    </nav>
-  </header>
+         <!--
+*****************************************************
+*                HEADER                             *
+*****************************************************
+-->
 
-  <!-- Hero Section -->
-  <section class="hero">
-    
-    
-    <div class="hero-text">
-      <div class="vertical-line"></div>
-      <div class="hero-headings">
-        <h1 style="color: var(--secondary);" id="main-heading1"> <span  id="span-heading">Super value deals</span></h1>
-        <h1 style="color: var(--black);" id="main-heading2">
-          <span id="span-heading">on all products</span></h1>
-        <h4 id="sub-heading"><span id="span-heading">70% OFF! with Coupons</span></h4>
-
-        <span class="shopNow-btn">
-          <button>Shop Now <i class='bx bxs-right-arrow-square'></i></button>
-        </span>
-
-      </div>
-    </div>
-
-    <div class="hero-image">
-      <div class="img-container">
-        <!-- <img src="/img/backgrounds/shopping 3.jpg" alt="" height="440px"  > -->
-      </div>
-    
-  </div>
-
-    
-  </section>
-</div>
-  <!-- Limited time offer -->
-  <section class="limited-timeDeals">
-    <div class="heading">
-      <h1> Limited time deals </h1>
-    </div>
-    <div class="deals-container">
-
-       
+      <header class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="img/about/logo5.svg"
+              alt="logo"
+            />
+          </a>
         </div>
-    
-  </section>
+        <nav class="nav">
+          <ul class="nav-ul">
+            <li class="close-button">
+              <img src="/img/close.svg" alt="" />
+            </li>
+            <li class="hide"><a class="active" href="#">home</a></li>
+            <li class="hide"><a href="#">shop</a></li>
+            <li class="hide"><a href="#">about</a></li>
+            <li class="hide"><a href="#">contact</a></li>
+            <li class="hide">
+              <a href="#"><i class="bx bx-shopping-bag"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <button for="menuBtn" class="menu-button">
+         <i class="bx bx-menu"></i>
+        </button>
+      </header>
 
-  <section class="categories">
-    
-    <div class="clothing">
-       <div class="categories-heading">
-       <h1>Clothing</h1>
-      <h1>Collection</h1>
-     
-      </div>
-      <div class="image">
-        <img src="/img/products/clothes-category 1.png" alt=""  loading="lazy"  decoding="async" fetchpriority = "high">
-      </div>
+      <main data-barba="container" data-barba-namespace="home">
+      <!--
+*****************************************************
+*                 HERO SECTION                      *
+*****************************************************
+-->
 
-     
-    </div>
-
-
-    <div class="accessories">
-    
-      <div class="image">
-        <img src="/img/products/shade1.jpg" alt="" loading="lazy" 
-        decoding="async" fetchpriority = "high">
-      </div>
-      <div class="categories-heading">
-        <h1>Accessories</h1>
-       </div>
-    </div>
-
-    <div class="shoes">
-      <div class="categories-heading">
-        <h1>Shoes</h1>
-       </div>
-      <div class="image">
-        <img src="/img/products/shoes.jpg" alt="" loading="lazy" 
-        decoding="async"  fetchpriority = "high">
-      </div>
-    </div>
-  </section>
-
-  <!-- categories section --> 
-   
+      <section class="hero">
+        <div class="hero-text">
+          <div class="secondary1">
+            <h1>SUPER SALE</h1>
+          </div>
+          <div class="primary">
+            <h1 id="primary-main">50</h1>
+            <div class="adjacent-to-primary">
+              <h1>UPTO</h1>
+              <h1>%</h1>
+            </div>
+            <div class="primary-image">
+              <img src="/img/features/redArrows.svg" alt="" />
+            </div>
+          </div>
+          <div class="secondary2">
+            <h1>ON ALL PRODUCTS</h1>
+          </div>
+          <div class="date">
+            <h4>September 8,9 and 10</h4>
+          </div>
+          <span class="shopNow-btn">
+            <button>Shop Now <i class="bx bxs-right-arrow-square"></i></button>
+          </span>
+        </div>
+        <div class="hero-image">
+          <div class="img-container">
+            <img src="img/hero/big-sale-banner.jpg" alt="" />
+          </div>
+        </div>
+      </section>
 
 
-
-
-
-
-  
-  <!-- Feature section -->
-  <!-- <section class="feature-page">
-    
-  <div class="features">
-   
-    <div class="free-Shipping box" >
-      <img src="img/features/f1.png" alt="">
-      <button>Free Shipping</button>
-    </div>
-    <div class="Online-order box">
-      <img src="img/features/f2.png" alt="">
-      <button>Online Online</button>
-    </div>
-    <div class="save-money box">
-      <img src="img/features/f3.png" alt="">
-      <button>Save Money</button>
-    </div>
-    <div class="promotion box">
-      <img src="img/features/f4.png" alt="">
-      <button>Promotions</button>
-    </div>
-    <div class="happy-sell box" >
-      <img src="img/features/f5.png" alt="">
-      <button>Happy Sell</button>
-    </div>
-    <div class="support box">
-      <img src="img/features/f6.png" alt="">
-      <button>F24/7 Support</button>
-    </div>
-    </div>
-
-    <div class="feature-products">
+    <!--
+*****************************************************
+*                 LLIMITED TIME DEALS SECTION       *
+*****************************************************
+-->
+    <section class="limited-timeDeals">
       <div class="heading">
-        <h1>Feature Products</h1>
+        <div class="heading-wrapper">
+        <h1>Buy fast !</h1>
+      </div>
+      </div>
+      <div class="deals-container">
+        <!-- I have done this using js -->
+      </div>
+    </section>
+
+
+  <!--
+*****************************************************
+*          CATEGORIES -  SECTION                    *
+*****************************************************
+-->
+    <section class="categories">
+      <div class="heading-wrapper">
+        <div class="heading-ghost">
+          <h1>Choose from</h1>
+        </div>
+        <div class="heading">
+          <h1>Choose from</h1>
+        </div>
+      </div>
+      <div class="clothing">
+        <div class="categories-heading">
+          <a href="#">
+            <h1>Clothing</h1>
+            <h1>Collection</h1>
+          </a>
+        </div>
+        <div class="image">
+          <img
+            src="/img/products/clothes-category 1.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="accessories">
+        <div class="image">
+          <img
+            src="/img/backgrounds/images1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="categories-heading">
+          <a href="#">
+            <h1>Accessories</h1>
+          </a>
+        </div>
+      </div>
+      <div class="shoes">
+        <div class="categories-heading">
+          <a href="#">
+            <h1>Shoes</h1>
+          </a>
+        </div>
+        <div class="image">
+          <img
+            src="/img/products/shoes2.jpg"
+            alt=""
         
+          />
+        </div>
       </div>
-
-      <div class="products">
-
+    </section>
+    <!--  -->
+  </main>
+    <!--
+*****************************************************
+*               SING UP SECTION                   *
+*****************************************************
+-->
+    <section class="SignUp">
+      <div class="SignUp-overlay"></div>
+      <div class="headings">
+        <div class="heading">
+          <h1>Subscribe now</h1>
+        </div>
+        <div class="subheading">
+          <p>Subscribe to Our newsletter to get <br class="br"> notified about latest deals</p>
+        </div>
       </div>
-    </div>
-  </section> -->
+      <div class="SignUp-email">
+        <input
+          type="text"
+          name="SignUp-email"
+          id="email"
+          placeholder="email please..."
+          autocomplete="true"
+        />
+        <div class="SignUp-btn">
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <footer>
+        <div class="followUs">
+          <div class="heading">
+            <h2>Connect with us on</h2>
+            <div class='followUs-icons'>
+              <i class='bx bxl-facebook'></i>
+              <i class='bx bxl-youtube'></i>
+              <i class='bx bxl-twitter'></i>
+              <i class='bx bxl-instagram-alt'></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
 
-
-
-  <!-- scricpt section -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
-    integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="module" src="/main.js"></script>
-</body>
-
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="barba.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script> 
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

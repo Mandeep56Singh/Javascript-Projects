@@ -6,8 +6,8 @@
         "title": "Women's Fashion Bag",
         "rating":"4.2",
         "price":{
-         "original": "100",
-         "discount": "60"
+         "original": "160",
+         "discount": "100"
         },
         "category":"accessories",
         "stock": 12,
@@ -32,7 +32,7 @@
         "category":"accessories",
         "stock": 24,
         "image":"/img/products/quartz_watch.png",
-        "height": 400,
+        "height":400,
         "width":400,
         "description": 
         "LOUIS DEVIN Quartz Men's Watch  | Sleek Design | Versatile Elegence | Water Resistant ",

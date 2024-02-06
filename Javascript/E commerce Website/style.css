@@ -1,87 +1,123 @@
+@import url("/CSS/header.css");
+@import url("/CSS/hero.css");
+@import url("/CSS/limitedDeal.css");
+@import url("/CSS/feature.css");
+@import url("/CSS/categories.css");
+@import url("/CSS/SignUp.css");
 
-@import url('/CSS/homepage.css');
-@import url('/CSS/limitedDeal.css');
-@import url('/CSS/feature.css');
-@import url('/CSS/categories.css');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&family=League+Spartan:wght@300&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300&family=League+Spartan:wght@300&family=Lemon&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap");
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=League+Spartan:wght@300&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&family=League+Spartan:wght@300&family=Lemon&family=Montserrat:wght@500&family=Poppins:wght@400;500&display=swap');
-
-
+/* || VARIABLES */
 
 :root {
-
- 
-
   /* colors */
-  --black:#222;
-  --primary:#ADD8E6;
-  --secondary:#00A7DC;
-  --para:#465b52;
-  --light: #f6F4F1;
 
-  /* color palette */
-  /* 
-  Heliotrope
-#C466FB
+  --primary: #add8e6;
+  --secondary: #9414ff;
+  --para: #465b52;
+  --light: #f6f4f1;
 
-Brink Pink
-#FB7277
-
-Lima
-#5FC219
-
-Inch Worm
-#98E124
+  /* color paletee */
+  --bg: #fed43c18;
+  --black: #332c2c;
+  --orangeYellow: #ce9d13;
+  --red: #ea2027;
+  --yellow: #f8e64a;
   
-  */
 
-
+  /* gradients */
+  --redGradient: linear-gradient(315deg, #ff7878 0%, #ff0000 74%);
 }
+/* || fonts */
+@font-face {
+  font-family: futura-heavy;
+  src: url(fonts/futura/Futura\ Heavy\ Italic\ font.ttf);
+}
+@font-face {
+  font-family:futura-bold ;
+  src: url(fonts/futura/Futura\ Bold\ font.ttf);
+}
+@font-face {
+  font-family:Montseratt-normal ;
+  src: url(fonts/Montserrat/static/Montserrat-Black.ttf);
+}
+@font-face {
+  font-family: Antonio-Medium;
+  src: url(fonts/Antonio/static/Antonio-Medium.ttf);
+}
+@font-face {
+  font-family: Baloo-bold;
+  src: url("/fonts/Baloo_2/static/Baloo2-Bold.ttf");
+}
+
+/* || RESETS  */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Spartan',sans-serif;
- 
+  font: inherit,"Spartan", sans-serif ;
 }
+html, body {
+  height: 100%;
+}
+ul, ol {
+  list-style: none;
+}
+
+/*  || GENERAL STYLES */
+
+body {
+  background-color: var(--bg);
+  overflow: hidden;
+}
+
 h1 {
-  font-size: 80px;
-  line-height: 74px;
   color: var(--black);
+  font-size: 4rem;
+
 }
 h2 {
+  color: var(--black);
   font-size: 56px;
   line-height: 54px;
-  color: var(--black);
+
 }
 h4 {
-  font-size: 32px;
   color: var(--black);
+  font-size: 2rem;
 }
 p {
-  font-size: 24px;
-  
+  font-size: 2rem;
+
 }
- /* styling the LoadOverlay */
- .LoadOverlay {
+button {
+  font-family: Montseratt-normal;
+}
+/* styling the LoadOverlay */
+.LoadOverlay {
   /* don't use position : absolute here it will put the LoadOverlay to top of page , it will create problem if u are not at top of body */
+
+  align-items: center;
+  background-color: #FEFAEC;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background: #BFD6D9;
+  width: 100vw;
   z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
- }
- .LoadOverlay img {
-   height: 400px;
- }
+
+ 
+}
+.LoadOverlay img {
+  max-width: 50vw;
+}
+
 

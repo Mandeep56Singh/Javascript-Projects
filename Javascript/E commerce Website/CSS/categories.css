@@ -1,65 +1,198 @@
+--root {
+  --headingEnd: "100% 80%";
+  --imageEnd: "50% 70%";
+}
 .categories {
-    
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 140px;
-}
-
-.categories img {
- 
-    object-fit: cover;
-}
-
-.categories h1 {
-    font-size: 80px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8.75rem;
 }
 .clothing {
-
-   display: flex;
-   align-items: center;
-   margin-left: auto;
-   margin-right: 12%;
+  align-items: center;
+  display: flex;
+  margin: 9.75rem 5rem 0 auto;
+  overflow: hidden;
+  position: relative;
 }
-.clothing h1 {
-    position: relative;
-    z-index: 9;
-    right: -15%;
-}
-.clothing img{
-  background: #E4F0FC;
-}
-
 .accessories {
-   
-    position: relative;
-    top: -60px;
-    margin-right: auto;
-    margin-left: 8%;
-}
-.accessories h1 {
-        margin-left: 60px;
-        position: relative;
-        z-index: 9;
-        left: -15%;
-    
-}
-.accessories .image {
-  
+  margin-left: 8%;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  top: -60px;
 }
 
 .shoes {
-    display: flex;
-    align-items: flex-start;
-    margin-left: auto;
-    margin-right: 4%;
-    position: relative;
-    top: -380px;
+  align-items: flex-start;
+  display: flex;
+  margin-left: auto;
+  margin-right: 4%;
+  overflow: hidden;
+  position: relative;
+  top: -300px;
 }
-.shoes h1{
 
-    position: relative;
-    z-index: 9;
-    left: 18%;
-    margin-top: 60px;
+/* HEADINGS  */
+.categories h1 {
+  position: relative;
+  font-size: 5rem;
+}
+.accessories h1 {
+  margin-left: 3.75rem;
+  position: relative;
+  z-index: 9;
+  left: -11%;
+  transform: translateX(-150%);
+}
+.clothing h1 {
+  margin-right: -3.75rem;
+  z-index: 9;
+  transform: translateX(-150%);
+}
+.shoes h1 {
+  position: relative;
+  z-index: 9;
+  left: 18%;
+  margin-top: 3.75rem;
+  transform: translateX(-150%);
+}
+/* gsap effect  : As you scrolling the .heading h1 will cover the .heading-ghost h1 */
+.categories .heading-wrapper {
+  position: relative;
+  margin-inline: auto;
+}
+
+.categories .heading-ghost h1 {
+  position: absolute;
+  opacity: 0.3;
+  width: 100%;
+}
+
+.categories .heading h1 {
+  width: 0%;
+  z-index: 1;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.categories a {
+  text-decoration: underline 4px solid var(--red);
+}
+
+/* -------- IMAGES ------------- */
+.categories .image {
+  --width: 400px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.categories .image::after {
+  content: "";
+  width: var(--width);
+  height: 400px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #fefaec;
+}
+
+.categories img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.clothing img {
+  position: absolute;
+  background: #e4f0fc;
+  /* display: none; */
+}
+
+/*****************************************************
+*          MEDIA QUERIES                             *
+*****************************************************/
+
+@media screen and (min-width: 360px) and (max-width: 1000px) {
+  --root {
+    --headingEnd: "top 10%";
+    --imageEnd: "0% 50%";
+  }
+
+  .categories {
+    display: flex;
+    align-items: center;
+  }
+  /* done */
+  .clothing {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 6.75rem 0 0 0;
+  }
+  /* done */
+  .accessories {
+    position: static;
+    margin: 4rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shoes {
+    flex-direction: column-reverse;
+    position: static;
+    align-items: center;
+    margin: 4rem 0 0 0;
+    margin-inline: auto;
+    justify-content: center;
+  }
+
+  .categories-heading {
+    /* margin-top: 1rem; */
+  }
+  /* done */
+  .categories h1 {
+    font-size: 3.75rem;
+  }
+
+  /* done */
+  .accessories h1 {
+    margin-left: 0rem;
+    left: 0%;
+  }
+  .clothing h1 {
+    margin-inline: auto;
+    order: 1;
+  }
+  .shoes h1 {
+    margin-top: 0rem;
+    left: 0%;
+  }
+
+  .categories .image {
+    margin-top: 2rem;
+    --width: 90vw;
+    height: 500px;
+    width: 90vw;
+  }
+  .categories .image::after {
+    content: "";
+    width: var(--width);
+    height: 100%;
+  }
+
+  .categories img {
+    height: 75vh;
+    object-fit: cover;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+}
+@media screen and (max-width:1200px) and (min-width:1000px) {
+  .shoes h1 { 
+    margin-top: 16rem;
+  }
 }

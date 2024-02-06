@@ -1,0 +1,240 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("/fonts/Baloo_2/static/Baloo2-Bold.ttf");
+}
+.barba-once {
+opacity: 0;
+}
+.barba-once-active {
+ transition: opacity 2s linear;
+}
+.barba-once-to {
+opacity: 1;
+}
+.hero {
+
+
+  align-items: center;
+  display: flex;
+  height: 88vh;
+  overflow: hidden;
+  width: 100%;
+}
+.hero-text {
+  padding-left: 6rem;
+}
+
+.secondary1 {
+  margin-left: 4rem;
+}
+.primary {
+  display: flex;
+
+  margin-top: -3rem;
+}
+
+#primary-main {
+  font-family: "Montserrat";
+  font-size: 16rem;
+
+  color: #ea2027;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.adjacent-to-primary {
+  margin-left: 1rem;
+  margin-top: 7rem;
+}
+
+.adjacent-to-primary h1 {
+  color: #ea2027;
+}
+
+.adjacent-to-primary > :nth-child(2) {
+  margin-top: -1rem;
+  font-size: 5.5rem;
+  color: #ea2027;
+}
+.primary-image img {
+  position: relative;
+  bottom: 1rem;
+  right: 3.5rem;
+  height: 160px;
+}
+.secondary2 {
+  margin-top: -3rem;
+}
+.date {
+  /* text-align: center; */
+  font-size: 0.125rem;
+  margin-top: 1rem;
+  margin-left: 7rem;
+}
+.shopNow-btn {
+  overflow-x: hidden;
+}
+.shopNow-btn button {
+  margin-left: 9rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color: #ff7878;
+  background-image: var(--redGradient);
+
+  padding: 14px 30px 14px 20px;
+
+  border: none;
+  outline: none;
+  border-radius: 8px;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+.hero-headings button i {
+  margin-left: 20px;
+}
+
+/* for gsap animation */
+
+.hero-headings > * {
+  overflow: hidden;
+}
+#span-heading {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: transform all 0.5s;
+}
+
+.hero-image {
+  margin-left: -5rem;
+}
+.img-container {
+  overflow: hidden;
+}
+.img-container img {
+  object-fit: cover;
+  height: 90vh;
+  width: 45vw;
+}
+@media screen and (max-width: 720px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  #primary-main {
+    font-size: 18rem;
+  }
+
+  .primary-image img {
+    position: relative;
+    bottom: 0rem;
+    right: 5rem;
+    height: 100px;
+  }
+  .date {
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+  .shopNow-btn button {
+    margin-left: 6rem;
+    margin-top: 3rem;
+  }
+  .hero-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) and (min-width: 480px) {
+  .hero-text {
+    padding-left: 2rem;
+  }
+  .secondary1 h1,
+  .secondary2 h1,
+  .adjacent-to-primary > :nth-child(1) {
+    font-size: 2.75rem;
+    line-height: 4.5rem;
+  }
+  .adjacent-to-primary > :nth-child(2) {
+    font-size: 6.5rem;
+  }
+  .adjacent-to-primary {
+    position: relative;
+    bottom: 3rem;
+  }
+  #primary-main {
+    font-size: 14rem;
+  }
+
+  .primary-image img {
+    position: relative;
+    bottom: 0rem;
+    right: 4rem;
+    height: 80px;
+  }
+  .date h1 {
+    margin-top: 2rem;
+    margin-right: 5rem;
+    margin-right: auto;
+  }
+  .shopNow-btn button {
+    width: 50%;
+    margin-right: 10rem;
+  }
+  .hero-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text {
+    padding-left: 1rem;
+  }
+  .secondary1 h1,
+  .secondary2 h1,
+  .adjacent-to-primary > :nth-child(1) {
+    font-size: 2.25rem;
+    line-height: 4.25rem;
+  }
+
+  .adjacent-to-primary > :nth-child(2) {
+    font-size: 5.5rem;
+    margin-top: -2rem;
+  }
+  .adjacent-to-primary {
+    position: relative;
+    bottom: 3rem;
+  }
+  #primary-main {
+    font-size: 12rem;
+  }
+
+  .primary-image img {
+    position: relative;
+    bottom: 1rem;
+    right: 2rem;
+    height: 100px;
+  }
+  .date h4 {
+    position: relative;
+    right: 2rem;
+    margin-top: 2rem;
+    font-size: 1.75rem;
+  }
+  .shopNow-btn button {
+    width: 80vw;
+    margin-right: 10rem;
+  }
+  .hero-image {
+    display: none;
+  }
+}
